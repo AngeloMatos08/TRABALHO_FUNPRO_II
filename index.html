@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade FUNPRO II</title>
+
+    <script>
+        function validarLogin(event) {
+            event.preventDefault();
+
+            const user = document.getElementById("user").value;
+            const pass = document.getElementById("pass").value;
+
+            if (user === "admin" && pass === "1234") {
+                window.location.href = "sucesso.html";
+            } else {
+                window.location.href = "erro.html";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="container">
+
+    <h1 id="topo">Minha primeira página em HTML</h1>
+
+    <section id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>
+            Me chamo Ângelo Gabriel Matos do Nascimento, nasci em Fortaleza, e atualmente estou no terceiro
+            semestre do curso técnico em informática. Gosto bastante de ler livros de ficção científica e romance policial,
+            além de escutar bastante rock psicodélico (Pink Floyd, Beatles, Jimi Hendrix). Recentemente estudei bastante sobre redes de computadores,
+            cibersegurança, e atualmente estou estagiando em uma empresa utilizando a linguagem Swift (Para dispositivos iOS).
+        </p>
+
+        <h3>Minha foto de perfil</h3>
+        <img src="images/foto.png" alt="Foto de perfil" width="200">
+
+        <br><br>
+
+        <figure>
+            <img src="images/pinkfloyd.png" alt="Animals - Pink Floyd" width="200">
+            <figcaption>Meu álbum favorito</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li>Teste1</li>
+            <li>Teste2</li>
+            <li>Teste3</li>
+        </ul>
+
+        <a href="https://github.com/AngeloMatos08">Meu Github</a>
+        <br><br>
+
+        <a href="docs/Cangaço_Trevoso.pdf" download="RPG_Cangaco_Trevoso.pdf">
+            Baixar livro de regras de RPG
+        </a>
+
+        <br><br>
+
+        <form onsubmit="validarLogin(event)">
+            <label for="user">Usuário:</label><br>
+            <input type="text" id="user" name="user"><br>
+
+            <label for="pass">Senha:</label><br>
+            <input type="password" id="pass" name="pass"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br><br>
+
+        <h3>Tabela de contatos</h3>
+        <table>
+            <tr><th>Número: (85)985645643</th></tr>
+            <tr><th>Email: marespow2@gmail.com</th></tr>
+        </table>
+
+        <br>
+        <a href="#topo">Voltar ao topo</a>
+    </section>
+
+</div>
+
+<footer>Ângelo Gabriel Matos do Nascimento — 2025</footer>
+
+</body>
+</html>
