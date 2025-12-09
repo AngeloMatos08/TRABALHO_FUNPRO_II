@@ -9,7 +9,9 @@ Neste trabalho foram implementadas ao HTML:
 -Simulação de testes erro/sucesso.
 
 Como testar o formulário:
-basta usar o usuário com "admin" e a senha: "1234".
+Primeiro baixe o zip do código pelo github;
+EXTRAIA a pasta e em seguida acesse o index.html;
+Por fim basta usar o usuário com "admin" e a senha: "1234".
 
 A parte mais difícil foi a de divisão da página em sections pois eu não sabia muito bem em como refazer a página depois, porquê até aquele momento ela havia sido dividida apenas com uma linha horizontal;
 A parte mais fácil acredito que tenha sido a de criar a estrutura base da página e enviar as imagens.
